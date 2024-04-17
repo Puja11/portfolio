@@ -1,0 +1,16 @@
+li a {
+    color: white;
+    text-decoration: none;
+}
+nav.navbar {
+    padding: .5rem;
+    background: #5c5959;
+}
+nav ul li {
+    display: inline;
+    padding: .5rem;
+    list-style-type: none;
+}
+li a.active{
+    text-decoration: underline;
+}

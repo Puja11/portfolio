@@ -1,0 +1,97 @@
+body {
+    background-color:#f9f7f7;
+    font-family: Neuemontreal, sans-serif;
+}
+ 
+.containerHome {
+    background-color: #f9f7f7;
+}
+
+
+
+.containerHome a{
+    color: #171717;
+    text-transform: uppercase;
+    font-family: Neuemontreal, sans-serif;
+    font-weight: 400;
+    transition: color .3s cubic-bezier(.47, 0, .745, .715);
+    padding: 0.2rem;
+    margin:0.2rem
+
+}
+.containerHome a:hover {
+    color: #996;
+}
+section{
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+ header{
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+}
+header span{
+    display: block;
+}
+h1.bigFont{
+    color: #0f0f0f;
+    font-family: Neuemontreal, sans-serif;
+    font-size: 8vw;
+    font-weight: 600;
+    line-height: .9em;
+}
+hr{
+    border-width: 1px;
+    border-block-color: black;
+    margin: 35px;
+}
+heading-2{
+    color: #171717;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-family: Neuemontreal, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 2em;
+}
+.skills img{
+    width:150px;
+    padding:5px
+}
+.projects img{
+    width:400px;
+    padding: 5px
+}
+.projects div{
+    width:400px;
+    padding: 5px
+}
+.projects {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li {
+    color: #171717;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Neuemontreal, sans-serif;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+.education span {
+    margin: 15px;
+}
+.contacts img{
+    width:20px;
+    }
