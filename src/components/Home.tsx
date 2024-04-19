@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/home.css'
 import { Link } from 'react-router-dom';
 import typescripts from '../images/Typescript.png';
@@ -24,7 +24,8 @@ import gmail from '../images/gmail.png'
 import github from '../images/github.png'
 
 export const Home = () => {
-  
+  const [display,setDisplay] = useState('none');
+
   return (
     <div className="containerHome">
       <nav>
@@ -36,7 +37,7 @@ export const Home = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#Education">Education</a>
+            <a href="#education">Education</a>
           </li>
           <li>
             <a href="#contacts">Contacts</a>
@@ -186,7 +187,8 @@ working on ABN AMRO banking application.</li>
       <hr/>
       <section className="contacts" id="contacts">        
           <Link to='https://github.com/Puja11' target='_blank'><img src={github} alt="github" /></Link>
-          <img src={gmail} alt="gmail" onClick={() => {navigator.clipboard.writeText("puja11kumari@gmail.com")}}/>
+          <img  src={gmail} alt="gmail" onMouseOut={()=>{setDisplay('none')}} onClick={() => {navigator.clipboard.writeText("puja11kumari@gmail.com");setDisplay('inline');}}/>
+          <div id='gmail' style={{display:display}}>copied</div>
           <Link to='https://www.linkedin.com/in/puja-kumari-0958a8b0' target='_blank'><img src={LinkedIn} alt="LinkedIN" /></Link>
       </section>
     </div>
